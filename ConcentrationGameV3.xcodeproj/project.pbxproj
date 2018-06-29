@@ -14,6 +14,8 @@
 		FB6D0F5920E154570056FC9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB6D0F5720E154570056FC9F /* LaunchScreen.storyboard */; };
 		FB6D0F6420E154580056FC9F /* ConcentrationGameV3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6D0F6320E154580056FC9F /* ConcentrationGameV3Tests.swift */; };
 		FB6D0F6F20E154580056FC9F /* ConcentrationGameV3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6D0F6E20E154580056FC9F /* ConcentrationGameV3UITests.swift */; };
+		FB6D0F7D20E3900D0056FC9F /* Concentration.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6D0F7C20E3900D0056FC9F /* Concentration.swift */; };
+		FB6D0F7F20E3912F0056FC9F /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6D0F7E20E3912F0056FC9F /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		FB6D0F6A20E154580056FC9F /* ConcentrationGameV3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConcentrationGameV3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB6D0F6E20E154580056FC9F /* ConcentrationGameV3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcentrationGameV3UITests.swift; sourceTree = "<group>"; };
 		FB6D0F7020E154580056FC9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB6D0F7C20E3900D0056FC9F /* Concentration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concentration.swift; sourceTree = "<group>"; };
+		FB6D0F7E20E3912F0056FC9F /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				FB6D0F5520E154570056FC9F /* Assets.xcassets */,
 				FB6D0F5720E154570056FC9F /* LaunchScreen.storyboard */,
 				FB6D0F5A20E154570056FC9F /* Info.plist */,
+				FB6D0F7C20E3900D0056FC9F /* Concentration.swift */,
+				FB6D0F7E20E3912F0056FC9F /* Card.swift */,
 			);
 			path = ConcentrationGameV3;
 			sourceTree = "<group>";
@@ -258,6 +264,8 @@
 			files = (
 				FB6D0F5120E154560056FC9F /* ViewController.swift in Sources */,
 				FB6D0F4F20E154560056FC9F /* AppDelegate.swift in Sources */,
+				FB6D0F7D20E3900D0056FC9F /* Concentration.swift in Sources */,
+				FB6D0F7F20E3912F0056FC9F /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
