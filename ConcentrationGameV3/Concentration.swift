@@ -7,7 +7,8 @@
 //
 
 import Foundation
-class Concentaration  {
+
+struct Concentaration  {
     private(set)  var cards = Array<Card>()
     
     private var indexOfOnlyOneFacedUpCard: Int?{
@@ -32,12 +33,12 @@ class Concentaration  {
         }
     }
     
-    func chooseCard(at index: Int){
+    mutating func chooseCard(at index: Int){
         assert(cards.indices.contains(index), "Concentration.chooseCard(at: \(index)) chosen index is not in the cards")
         if !cards[index].isMatched{
             if let matchedIndex = indexOfOnlyOneFacedUpCard, matchedIndex != index{
                 //check if cards are matched
-                if cards[matchedIndex].identifier == cards[index].identifier{
+                if cards[matchedIndex] == cards[index]{
                     cards[matchedIndex].isMatched = true
                     cards[index].isMatched = true
                 }
@@ -51,18 +52,19 @@ class Concentaration  {
     init(numberOfPairsOfCards: Int) {
         assert(numberOfPairsOfCards > 0, "Concentration.init(at: \(numberOfPairsOfCards)) you must have at least one pair of cards")
         for _ in 0..<numberOfPairsOfCards{
+            
             let card = Card()
             cards += [card,card]
-            shuffleCards()
+            //shuffleCards()
         }
         print(cards)
     }
     //Shuffle the cards
-    func shuffleCards(){
+    mutating func shuffleCards(){
         for _ in cards.indices{
             let randomNumberOne = cards.count.arc4random
             let randomNumberTwo = cards.count.arc4random
-            if cards[randomNumberOne].identifier != cards[randomNumberTwo].identifier{
+            if cards[randomNumberOne] != cards[randomNumberTwo]{
                 var card = Card()
                 card = cards[randomNumberTwo]
                 cards[randomNumberOne] = cards[randomNumberTwo]
